@@ -31,7 +31,7 @@ jobs:
   deploy:
     needs: build
     # Use self-hosted runner. Replace label 'aws_ec2' with your runner label if different.
-    runs-on: [ self-hosted, linux, aws-ec2 ]
+    runs-on: [ self-hosted, linux ]
     steps:
       
       - name: Pull image from docker hub
